@@ -3873,8 +3873,8 @@ static bool InputTextFilterCharacter(unsigned int* p_char, ImGuiInputTextFlags f
             return false;
 
         // Filter private Unicode range. GLFW on OSX seems to send private characters for special keys like arrow keys (FIXME)
-        if (c >= 0xE000 && c <= 0xF8FF)
-            return false;
+    //    if (c >= 0xE000 && c <= 0xF8FF)
+    //        return false;
     }
 
     // Filter Unicode ranges we are not handling in this build
